@@ -18,7 +18,7 @@
 ## Статистика
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 0 решено (Easy: 0, Medium: 0, Hard: 0)
+- **LeetCode**: 1 решено (Easy: 1, Medium: 0, Hard: 0)
 - **DeepML**: 0 решено (Easy: 0, Medium: 0, Hard: 0)
 - **SQL**: 0 решено (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 решено
@@ -28,7 +28,9 @@
 ## LeetCode
 
 <!-- AUTO:LEETCODE-START -->
-_Пока нет решённых задач._
+| # | Задача | Сложность | Паттерн | Язык | Статус | Решение |
+|---|---|---|---|---|---|---|
+| 0001 | Two Sum | Easy | Arrays & Hashing | Py, C++ | Решено | [ссылка](leetcode/0001-two-sum) |
 
 <!-- AUTO:LEETCODE-END -->
 
