@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+
+# C++
+*.o
+*.out
+*.exe
+build/
+
+# Python
+__pycache__
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+EOF
+
+# Other
+*.vscode/
