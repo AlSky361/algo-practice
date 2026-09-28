@@ -18,7 +18,7 @@
 ## Статистика
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 2 решено (Easy: 2, Medium: 0, Hard: 0)
+- **LeetCode**: 3 решено (Easy: 3, Medium: 0, Hard: 0)
 - **DeepML**: 0 решено (Easy: 0, Medium: 0, Hard: 0)
 - **SQL**: 0 решено (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 решено
@@ -32,6 +32,7 @@
 |---|---|---|---|---|---|---|
 | 0001 | Two Sum | Easy | Arrays & Hashing | Py, C++ | Решено | [ссылка](leetcode/0001-two-sum) |
 | 0217 | Contains Duplicate | Easy | Arrays & Hashing | Py, C++ | Решено | [ссылка](leetcode/0217-contains-duplicate) |
+| 0242 | Valid Anagram | Easy | Arrays & Hashing | Py, C++ | Решено | [ссылка](leetcode/0242-valid-anagram) |
 
 <!-- AUTO:LEETCODE-END -->
 
