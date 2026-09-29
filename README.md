@@ -27,7 +27,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 4 solved (Easy: 3, Medium: 1, Hard: 0)
+- **LeetCode**: 5 solved (Easy: 3, Medium: 2, Hard: 0)
 - **DeepML**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
@@ -43,6 +43,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | 0049 | Group Anagrams | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0049-group-anagrams) |
 | 0217 | Contains Duplicate | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0217-contains-duplicate) |
 | 0242 | Valid Anagram | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0242-valid-anagram) |
+| 0347 | Top K Frequent Elements | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0347-top-k-frequent-elements) |
 
 <!-- AUTO:LEETCODE-END -->
 
