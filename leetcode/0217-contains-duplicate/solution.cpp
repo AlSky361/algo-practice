@@ -8,10 +8,9 @@ public:
         hash_set.reserve(nums.size());
 
         for (int el : nums) {
-            if (hash_set.contains(el)) {
+            if (!hash_set.insert(el).second) {
                 return true;
             }
-            hash_set.insert(el);
         }
 
         return false;
