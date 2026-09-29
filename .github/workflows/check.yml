@@ -1,0 +1,29 @@
+name: Check README
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Regenerate README
+        run: python3 generate_readme.py
+
+      - name: Check README is up to date
+        run: |
+          git diff --exit-code README.md || {
+            echo "README.md is out of date. Run: python3 generate_readme.py"
+            exit 1
+          }
