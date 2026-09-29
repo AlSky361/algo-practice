@@ -9,6 +9,10 @@ Requirements (the script exits with an error if they are not met):
 - PyYAML must be installed:  pip install pyyaml
 - Every task folder must contain a meta.yml with at least a `title`.
 
+Only tasks with status "Solved" are listed in the tables and counted in the
+statistics. Folders with any other status (e.g. "In progress") are skipped,
+but their meta.yml is still validated.
+
 meta.yml format:
     leetcode:
         title: Two Sum
@@ -52,6 +56,7 @@ LANG_FILES = {
     "solution.sql": "SQL",
 }
 EMPTY = "_No solved problems yet._\n"
+SOLVED = {"solved"}
 
 
 class MissingMetaError(Exception):
@@ -90,12 +95,15 @@ def collect_tasks(section_dir: Path):
         if not folder.is_dir():
             continue
         meta = read_meta(folder)
+        status = str(meta.get("status", "Solved")).strip()
+        if status.lower() not in SOLVED:
+            continue
         tasks.append({
             "number": extract_number(folder.name),
             "title": meta.get("title"),
             "difficulty": meta.get("difficulty", "—"),
             "pattern": meta.get("pattern") or meta.get("topic", "—"),
-            "status": meta.get("status", "Solved"),
+            "status": status,
             "lang": languages_in(folder),
             "rel_link": folder.relative_to(ROOT).as_posix(),
         })
@@ -141,7 +149,6 @@ def sql_table(tasks):
 
 
 def project_euler_table(tasks):
-    # Project Euler has no Easy/Medium/Hard, so no difficulty column.
     return make_table(tasks, [
         ("#", "number"), ("Problem", "title"), ("Language", "lang"),
         ("Status", "status"), ("Solution", link),
