@@ -44,7 +44,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 6 solved (Easy: 3, Medium: 3, Hard: 0)
+- **LeetCode**: 7 solved (Easy: 3, Medium: 4, Hard: 0)
 - **DeepML**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
@@ -57,6 +57,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | # | Problem | Difficulty | Pattern | Language | Status | Solution |
 |---|---|---|---|---|---|---|
 | 0001 | Two Sum | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0001-two-sum) |
+| 0036 | Valid Sudoku | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0036-valid-sudoku) |
 | 0049 | Group Anagrams | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0049-group-anagrams) |
 | 0217 | Contains Duplicate | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0217-contains-duplicate) |
 | 0238 | Product of Array Except Self | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0238-product-of-array-except-self) |
