@@ -8,4 +8,3 @@ class Solution:
             hash_map[el] = i
         
         return []
-        
