@@ -16,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 
-PADDING = {"leetcode": 4, "sql": 4, "deepml": 2, "project-euler": 3}
+PADDING = {"leetcode": 4, "sql": 4, "project-euler": 3}
 
 PY_TEMPLATE = '''class Solution:
     def solve(self):
@@ -42,8 +42,6 @@ def build_meta(section: str, title: str, difficulty: str, pattern: str, url: str
         lines.append(f"difficulty: {difficulty}")
     if section == "leetcode":
         lines.append(f"pattern: {pattern}")
-    elif section == "deepml":
-        lines.append(f"topic: {pattern}")
     lines.append(f"url: {url}")
     lines.append("status: In progress")
     return "\n".join(lines) + "\n"
@@ -60,7 +58,7 @@ def main() -> int:
                         choices=["Easy", "Medium", "Hard"],
                         help="difficulty (default: Easy)")
     parser.add_argument("-p", "--pattern", default="",
-                        help="pattern (LeetCode) or topic (DeepML)")
+                        help="pattern (LeetCode)")
     parser.add_argument("--lang", nargs="+", default=None,
                         choices=["py", "cpp", "sql"],
                         help="solution files to create "

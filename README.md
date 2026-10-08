@@ -1,11 +1,10 @@
-# Interview Prep — LeetCode / DeepML / SQL / Project Euler
+# Interview Prep — LeetCode / SQL / Project Euler
 
 My solutions for technical interview preparation, written in **Python 3** and/or **C++** (SQL separately).
 
 ## Structure
 
 - `leetcode/NNNN-slug-name/` — LeetCode algorithm problems
-- `deepml/NN-slug-name/` — DeepML problems
 - `sql/NNNN-slug-name/` — LeetCode Database problems
 - `project-euler/NNN-slug-name/` — Project Euler problems
 
@@ -24,7 +23,7 @@ python3 new_problem.py leetcode 347 top-k-frequent-elements -d Medium -p "Arrays
 
 Options:
 - `-d`, `--difficulty` — `Easy` (default), `Medium` or `Hard`
-- `-p`, `--pattern` — pattern (LeetCode) or topic (DeepML); quote it if it contains spaces
+- `-p`, `--pattern` — pattern (LeetCode); quote it if it contains spaces
 - `--lang` — solution files to create: `py`, `cpp`, `sql` (default: `py cpp`, and `sql` for the `sql` section)
 
 The script creates `solution.py`, `solution.cpp` and `meta.yml` with `status: In progress`.
@@ -45,7 +44,6 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 
 <!-- AUTO:STATS-START -->
 - **LeetCode**: 8 solved (Easy: 3, Medium: 5, Hard: 0)
-- **DeepML**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -66,13 +64,6 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | 0347 | Top K Frequent Elements | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0347-top-k-frequent-elements) |
 
 <!-- AUTO:LEETCODE-END -->
-
-## DeepML
-
-<!-- AUTO:DEEPML-START -->
-_No solved problems yet._
-
-<!-- AUTO:DEEPML-END -->
 
 ## SQL
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Scans leetcode/, deepml/, sql/, project-euler/ and updates the tables
+Scans leetcode/, sql/, project-euler/ and updates the tables
 in README.md between <!-- AUTO:xxx-START --> and <!-- AUTO:xxx-END --> markers.
 
 Usage:  python3 generate_readme.py
@@ -20,11 +20,6 @@ meta.yml format:
         pattern: Arrays & Hashing
         url: https://...
         status: Solved            # optional, defaults to "Solved"
-    deepml:
-        title: Linear Regression
-        difficulty: Easy
-        topic: Regression
-        url: https://...
     sql:
         title: Second Highest Salary
         difficulty: Medium
@@ -102,7 +97,7 @@ def collect_tasks(section_dir: Path):
             "number": extract_number(folder.name),
             "title": meta.get("title"),
             "difficulty": meta.get("difficulty", "—"),
-            "pattern": meta.get("pattern") or meta.get("topic", "—"),
+            "pattern": meta.get("pattern"),
             "status": status,
             "lang": languages_in(folder),
             "rel_link": folder.relative_to(ROOT).as_posix(),
@@ -134,13 +129,6 @@ def leetcode_table(tasks):
     ])
 
 
-def deepml_table(tasks):
-    return make_table(tasks, [
-        ("#", "number"), ("Problem", "title"), ("Difficulty", "difficulty"),
-        ("Topic", "pattern"), ("Language", "lang"), ("Status", "status"), ("Solution", link),
-    ])
-
-
 def sql_table(tasks):
     return make_table(tasks, [
         ("#", "number"), ("Problem", "title"), ("Difficulty", "difficulty"),
@@ -155,7 +143,7 @@ def project_euler_table(tasks):
     ])
 
 
-def stats_line(lc, dm, sq, pe) -> str:
+def stats_line(lc, sq, pe) -> str:
     def counts(tasks):
         by = lambda d: sum(1 for t in tasks if t["difficulty"] == d)
         return len(tasks), by("Easy"), by("Medium"), by("Hard")
@@ -165,7 +153,7 @@ def stats_line(lc, dm, sq, pe) -> str:
         return f"- **{name}**: {n} solved (Easy: {e}, Medium: {m}, Hard: {h})\n"
 
     return (
-        fmt("LeetCode", lc) + fmt("DeepML", dm) + fmt("SQL", sq)
+        fmt("LeetCode", lc) + fmt("SQL", sq)
         + f"- **Project Euler**: {len(pe)} solved\n"
     )
 
@@ -188,20 +176,18 @@ def main():
 
     try:
         lc = collect_tasks(ROOT / "leetcode")
-        dm = collect_tasks(ROOT / "deepml")
         sq = collect_tasks(ROOT / "sql")
         pe = collect_tasks(ROOT / "project-euler")
     except MissingMetaError as e:
         sys.exit(f"Error: {e}\nEvery task folder must have a valid meta.yml. README.md was not changed.")
 
     text = readme_path.read_text(encoding="utf-8")
-    text = replace_block(text, "STATS", stats_line(lc, dm, sq, pe))
+    text = replace_block(text, "STATS", stats_line(lc, sq, pe))
     text = replace_block(text, "LEETCODE", leetcode_table(lc))
-    text = replace_block(text, "DEEPML", deepml_table(dm))
     text = replace_block(text, "SQL", sql_table(sq))
     text = replace_block(text, "PROJECT_EULER", project_euler_table(pe))
     readme_path.write_text(text, encoding="utf-8")
-    print(f"README.md updated: LeetCode {len(lc)}, DeepML {len(dm)}, SQL {len(sq)}, Project Euler {len(pe)}.")
+    print(f"README.md updated: LeetCode {len(lc)}, SQL {len(sq)}, Project Euler {len(pe)}.")
 
 
 if __name__ == "__main__":
