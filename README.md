@@ -43,7 +43,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 9 solved (Easy: 4, Medium: 5, Hard: 0)
+- **LeetCode**: 10 solved (Easy: 4, Medium: 6, Hard: 0)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -59,6 +59,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | 0049 | Group Anagrams | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0049-group-anagrams) |
 | 0125 | Valid Palindrome | Easy | Two Pointers | Py, C++ | Solved | [link](leetcode/0125-valid-palindrome) |
 | 0128 | Longest Consecutive Sequence | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0128-longest-consecutive-sequence) |
+| 0167 | Two Sum Ii Input Array Is Sorted | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0167-two-sum-ii-input-array-is-sorted) |
 | 0217 | Contains Duplicate | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0217-contains-duplicate) |
 | 0238 | Product of Array Except Self | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0238-product-of-array-except-self) |
 | 0242 | Valid Anagram | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0242-valid-anagram) |
