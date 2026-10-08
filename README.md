@@ -43,7 +43,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 10 solved (Easy: 4, Medium: 6, Hard: 0)
+- **LeetCode**: 11 solved (Easy: 4, Medium: 7, Hard: 0)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -55,6 +55,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | # | Problem | Difficulty | Pattern | Language | Status | Solution |
 |---|---|---|---|---|---|---|
 | 0001 | Two Sum | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0001-two-sum) |
+| 0015 | 3Sum | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0015-3sum) |
 | 0036 | Valid Sudoku | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0036-valid-sudoku) |
 | 0049 | Group Anagrams | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0049-group-anagrams) |
 | 0125 | Valid Palindrome | Easy | Two Pointers | Py, C++ | Solved | [link](leetcode/0125-valid-palindrome) |
