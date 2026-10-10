@@ -43,7 +43,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 13 solved (Easy: 4, Medium: 8, Hard: 1)
+- **LeetCode**: 14 solved (Easy: 5, Medium: 8, Hard: 1)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -60,6 +60,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | 0036 | Valid Sudoku | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0036-valid-sudoku) |
 | 0042 | Trapping Rain Water | Hard | Two Pointers | Py, C++ | Solved | [link](leetcode/0042-trapping-rain-water) |
 | 0049 | Group Anagrams | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0049-group-anagrams) |
+| 0121 | Best Time To Buy And Sell Stock | Easy | Sliding Window | Py, C++ | Solved | [link](leetcode/0121-best-time-to-buy-and-sell-stock) |
 | 0125 | Valid Palindrome | Easy | Two Pointers | Py, C++ | Solved | [link](leetcode/0125-valid-palindrome) |
 | 0128 | Longest Consecutive Sequence | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0128-longest-consecutive-sequence) |
 | 0167 | Two Sum II Input Array Is Sorted | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0167-two-sum-ii-input-array-is-sorted) |
