@@ -43,7 +43,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 12 solved (Easy: 4, Medium: 8, Hard: 0)
+- **LeetCode**: 13 solved (Easy: 4, Medium: 8, Hard: 1)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -58,6 +58,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | 0011 | Container With Most Water | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0011-container-with-most-water) |
 | 0015 | 3Sum | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0015-3sum) |
 | 0036 | Valid Sudoku | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0036-valid-sudoku) |
+| 0042 | Trapping Rain Water | Hard | Two Pointers | Py, C++ | Solved | [link](leetcode/0042-trapping-rain-water) |
 | 0049 | Group Anagrams | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0049-group-anagrams) |
 | 0125 | Valid Palindrome | Easy | Two Pointers | Py, C++ | Solved | [link](leetcode/0125-valid-palindrome) |
 | 0128 | Longest Consecutive Sequence | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0128-longest-consecutive-sequence) |
