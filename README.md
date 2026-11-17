@@ -2,6 +2,8 @@
 
 My solutions for technical interview preparation, written in **Python 3** and/or **C++** (SQL separately).
 
+The LeetCode practice follows the [NeetCode 150 roadmap](https://neetcode.io/roadmap).
+
 ## Structure
 
 - `leetcode/NNNN-slug-name/` — LeetCode algorithm problems
@@ -26,7 +28,7 @@ Options:
 - `-p`, `--pattern` — pattern (LeetCode); quote it if it contains spaces
 - `--lang` — solution files to create: `py`, `cpp`, `sql` (default: `py cpp`, and `sql` for the `sql` section)
 
-The script creates `solution.py`, `solution.cpp` and `meta.yml` with `status: In progress`.
+The script creates the selected solution files and a `meta.yml` with `status: In progress`.
 Once the problem is solved, set `status: Solved` in `meta.yml` and update the tables.
 
 ## Updating the tables
@@ -43,7 +45,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 14 solved (Easy: 5, Medium: 8, Hard: 1)
+- **LeetCode**: 15 solved (Easy: 5, Medium: 9, Hard: 1)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -67,6 +69,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | 0217 | Contains Duplicate | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0217-contains-duplicate) |
 | 0238 | Product of Array Except Self | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0238-product-of-array-except-self) |
 | 0242 | Valid Anagram | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0242-valid-anagram) |
+| 0271 | Encode And Decode Strings | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0271-encode-and-decode-strings) |
 | 0347 | Top K Frequent Elements | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0347-top-k-frequent-elements) |
 
 <!-- AUTO:LEETCODE-END -->
