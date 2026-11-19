@@ -1,0 +1,5 @@
+title: Longest Substring Without Repeating Characters
+difficulty: Medium
+pattern: Sliding Window
+url: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+status: Solved

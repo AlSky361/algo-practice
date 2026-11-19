@@ -45,7 +45,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 ## Stats
 
 <!-- AUTO:STATS-START -->
-- **LeetCode**: 15 solved (Easy: 5, Medium: 9, Hard: 1)
+- **LeetCode**: 16 solved (Easy: 5, Medium: 10, Hard: 1)
 - **SQL**: 0 solved (Easy: 0, Medium: 0, Hard: 0)
 - **Project Euler**: 0 solved
 
@@ -57,6 +57,7 @@ Do not edit the tables by hand — changes are overwritten on the next run.
 | # | Problem | Difficulty | Pattern | Language | Status | Solution |
 |---|---|---|---|---|---|---|
 | 0001 | Two Sum | Easy | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0001-two-sum) |
+| 0003 | Longest Substring Without Repeating Characters | Medium | Sliding Window | Py, C++ | Solved | [link](leetcode/0003-longest-substring-without-repeating-characters) |
 | 0011 | Container With Most Water | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0011-container-with-most-water) |
 | 0015 | 3Sum | Medium | Two Pointers | Py, C++ | Solved | [link](leetcode/0015-3sum) |
 | 0036 | Valid Sudoku | Medium | Arrays & Hashing | Py, C++ | Solved | [link](leetcode/0036-valid-sudoku) |
